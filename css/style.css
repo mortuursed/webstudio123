@@ -8,8 +8,18 @@
   --logo--color: #000;
   --footer--contact: rgba(255, 255, 255, 0.6);
 }
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+ margin: 0 auto;
+}
 body {
   font-family: Roboto;
+}
+.header{
+  padding-top:24px;
+  padding-bottom: 24px;
 }
 
 .header_logo {
@@ -52,8 +62,9 @@ body {
 }
 
 /* sectionHero */
-
 .main {
+  padding-top: 200px ;
+  padding-bottom: 200px;
   background: var(--cap--bg--color);
   text-align: center;
 }
@@ -88,6 +99,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom:5px;
+  margin-top:5px;
 }
 
 .unit_txt {
@@ -208,3 +221,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
+
