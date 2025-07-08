@@ -8,17 +8,17 @@
   --logo--color: #000;
   --footer--contact: rgba(255, 255, 255, 0.6);
 }
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
- margin: 0 auto;
+  margin: 0 auto;
 }
 body {
   font-family: Roboto;
 }
-.header{
-  padding-top:24px;
+.header {
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 
@@ -63,7 +63,7 @@ body {
 
 /* sectionHero */
 .main {
-  padding-top: 200px ;
+  padding-top: 200px;
   padding-bottom: 200px;
   background: var(--cap--bg--color);
   text-align: center;
@@ -99,8 +99,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-bottom:5px;
-  margin-top:5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .unit_txt {
@@ -119,6 +119,13 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.work_img {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* team */
@@ -133,6 +140,12 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+}
+
+
+.team_img{
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 .team_title {
@@ -155,6 +168,8 @@ body {
 
 .footer {
   background-color: var(--cap--bg--color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer_link {
@@ -221,4 +236,3 @@ body {
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
-
