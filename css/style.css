@@ -129,8 +129,22 @@ body {
   gap: 30px;
 }
 
-.unit_title {
+
+.unit_item::before{
+  display: block;
+  content:'';
+  background-color: var(--ourteam--bg--color);
+  border-radius: 4px;  
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/antenna\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.unit_title{
   color: var(--title--color);
+  display: block;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
