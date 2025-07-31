@@ -40,6 +40,9 @@ body {
 
 .header_studio {
   color: var(--logo--color);
+  background-image: url(https://i.pinimg.com/originals/5d/d0/11/5dd01111838b27780fd2f88a9226e887.gif);
+  background-clip: text;
+  color:transparent
 }
 
 .header_list {
@@ -85,6 +88,10 @@ body {
   padding-bottom: 200px;
   background: var(--cap--bg--color);
   text-align: center;
+  background-image: url(../img/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main_head {
@@ -137,9 +144,21 @@ body {
   border-radius: 4px;  
   width: 270px;
   height: 120px;
-  background-image: url(../img/antenna\ 1.svg);
+  background-image: url(../img/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
+}
+.unit_item:nth-child(2)::before{
+  background-image: url(../img/clock.png);
+}
+
+.unit_item:nth-child(3)::before{
+  background-image: url(../img/diagram.png);
+}
+
+.unit_item:nth-child(4)::before{
+  background-image: url(../img/astronaut.png);
 }
 
 .unit_title{
