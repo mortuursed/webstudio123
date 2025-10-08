@@ -63,7 +63,7 @@
       <section class="main">
         <div class="container">
           <h1 class="main_head">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main_button" type="button">Замовити послугу</button>
+          <button class="main_button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="unit">
@@ -105,12 +105,15 @@
           <ul class="work_list">
             <li class="work_item">
               <img class="work_img" src="./img/laptop_main.webp" alt="pc" />
+              <p class="work_text">Десктопні додатки</p>
             </li>
             <li class="work_item">
               <img class="work_img" src="./img/phone.webp" alt="phone" />
+              <p class="work_text">Мобільні додатки</p>
             </li>
             <li class="work_item">
               <img class="work_img" src="./img/tablet.webp" alt="tablet" />
+              <p class="work_text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -342,28 +345,28 @@
           <h2 class="footer_suptitle">приєднуйтесь</h2>
           <ul class="footer_suplist">
             <li class="footer_supitem">
-              <a class="footer_suplink"  href="">
+              <a class="footer_suplink" href="">
                 <svg class="footer_icon">
                   <use href="./img/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer_supitem">
-              <a class="footer_suplink"  href="">
+              <a class="footer_suplink" href="">
                 <svg class="footer_icon">
                   <use href="./img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer_supitem">
-              <a class="footer_suplink"  href="">
+              <a class="footer_suplink" href="">
                 <svg class="footer_icon">
                   <use href="./img/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer_supitem">
-              <a class="footer_suplink"  href="">
+              <a class="footer_suplink" href="">
                 <svg class="footer_icon">
                   <use href="./img/symbol-defs.svg#icon-in"></use>
                 </svg>
@@ -373,5 +376,45 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal_close">
+          <svg class="modal_icon">
+            <use href="./img/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal_form">
+            <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
+            <label class="modal_lable">Ім'я
+              <input type="text" class="modal_input" required>
+              <svg class="modal_img">
+                <use href="./img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="modal_lable">Телефон
+              <input type="tel" class="modal_input" placeholder="+3800123456789" pattern="^\+380\d{9}$" required>
+               <svg class="modal_img">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="modal_lable">Пошта
+              <input type="email" class="modal_input" required>
+               <svg class="modal_img">
+                <use href="./img/symbol-defs.svg#icon-mailmodel"></use>
+              </svg>
+            </label>
+               <label class="modal_lable">Коментар
+              <textarea class="modal_coment" placeholder="Введіть текст"></textarea>
+            </label>
+            <div class="modal_wrap">
+              <input type="checkbox" class="modal_check" required>
+              <p class="modal_text">Погоджуюся з розсилкою та приймаю </p>
+              <a href="" class="modal_link">Умови договору</a>
+            </div>
+            <button type="submit" class="modal_supbutton">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
