@@ -217,6 +217,11 @@ body {
 }
 
 /* work */
+
+.relative{
+  outline:20px saddlebrown;
+}
+
 .work {
   padding-bottom: 94px;
 }
