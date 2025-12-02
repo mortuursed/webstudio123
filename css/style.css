@@ -59,6 +59,29 @@ body {
   letter-spacing: 0.28px;
 }
 
+
+.header_item{
+  position: relative;
+}
+
+
+.header_link::after{
+content:"";
+width: 100%;
+height: 4px;
+background-color: var(--button--color);
+display: block;
+border-radius: 4px;
+position: absolute;
+left: 0;
+bottom: -33px;
+opacity: 0;
+}
+
+.header_link:hover::after{
+  opacity: 1;
+}
+
 .header_link:hover,
 .header_link:focus {
   color: var(--button--color);
@@ -396,7 +419,6 @@ body {
 .boxfooter {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
 
 .footer_suptitle {
@@ -479,6 +501,69 @@ body {
   letter-spacing: 0.42px;
 }
 
+.footer_join{
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+
+.footer_title{
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--header--color);
+margin-bottom: 20px;
+}
+
+
+.footer_form{
+  display: flex;
+  gap: 12px;
+}
+
+.footer_input{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+width: 358px;
+height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: rgba(33, 150, 243, 0);
+}
+
+
+.footer_btn{
+  border-radius: 4px;
+width: 200px;
+height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: var(--button--color);
+font-weight: 700;
+font-size: 16px;
+line-height: 187%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--header--color);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+
+.footer_send{
+width: 24px;
+height: 24px;
+fill: var(--header--color);
+}
+
 /* portfolio */
 
 .card {
@@ -536,9 +621,34 @@ body {
   border: 1px solid #eee;
 }
 
+.card_wraper{
+  position: relative;
+}
+
+
+.card_suptext{
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: var(--header--color);
+background-color:rgba(33, 150, 243, 0.9);
+position: absolute;
+left: 0;
+top: 0;
+padding: 63px 24px;
+height: 100%;
+opacity: 0;
+}
+
+
+
 .card_elm:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    .card_suptext{
+      opacity: 1;
+    }
 }
 
 .card_title {
