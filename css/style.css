@@ -58,6 +58,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -77,10 +80,9 @@ position: absolute;
 left: 0;
 bottom: -33px;
 opacity: 0;
-transition: cubic-bezier(0.4, 0, 0.2, 1);
-transition-property:var(--button--color);
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+transition-property:opacity;
 transition-duration: 250ms;
-
 }
 
 .header_link:hover::after{
@@ -113,6 +115,9 @@ transition-duration: 250ms;
   width: 16px;
   height: 12px;
   fill: var(--text--color);
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_supitem:last-child {
@@ -128,6 +133,9 @@ transition-duration: 250ms;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_suplink:hover,
@@ -327,6 +335,9 @@ transition-duration: 250ms;
   width: 20px;
   height: 20px;
   fill: var(--icon--color);
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team_link {
@@ -336,15 +347,15 @@ transition-duration: 250ms;
   height: 44px;
   width: 44px;
   border-radius: 50%;
+   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team_link:hover {
   background-color: var(--button--color);
   .team_icon {
     fill: var(--ourteam--bg--color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1); 
-    transition-duration: 250ms;
-    transition-property: var(--button--color);
   }
 }
 
@@ -409,15 +420,15 @@ transition-duration: 250ms;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--icon--color);
+   transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client_item:hover {
   border: 1px solid var(--button--color);
   .client_icon {
     fill: var(--button--color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-property: var(--button--color);
   }
 }
 
@@ -425,6 +436,9 @@ transition-duration: 250ms;
   width: 106px;
   height: 60px;
   fill: var(--icon--color);
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .boxfooter {
@@ -455,19 +469,22 @@ transition-duration: 250ms;
   height: 44px;
   justify-content: center;
   align-items: center;
+   transition-property:  background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_icon {
   width: 20px;
   height: 20px;
   fill: var(--header--color);
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_suplink:hover {
   background-color: var(--button--color);
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: var(--button--color);
-  transition-property: 250ms;
 }
 
 .footer {
@@ -592,6 +609,13 @@ fill: var(--header--color);
   padding-right: 24px;
 }
 
+
+.card_item{
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition-property: color,background-color;
+  transition-property: 250ms;
+}
+
 .card_btn {
   color: var(--title--color);
   text-align: center;
@@ -610,8 +634,6 @@ fill: var(--header--color);
   background-color: var(--button--color);
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 2px 2px 0 rgba(0, 0, 0, 0.12);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 
 .card_list {
@@ -635,10 +657,14 @@ fill: var(--header--color);
   flex-shrink: 0;
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: all;
+  transition-property: 250ms;
 }
 
 .card_wraper{
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -655,17 +681,20 @@ top: 0;
 padding: 63px 24px;
 height: 100%;
 opacity: 0;
+transform: translateY(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition-property: transform,opacity ;
+  transition-duration: 250ms ;
 }
 
 
 
 .card_elm:hover {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     1px 4px 6px 0 rgba(0, 0, 0, 0.16);
     .card_suptext{
       opacity: 1;
+      transform: translateY(0);
     }
 }
 
