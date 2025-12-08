@@ -9,6 +9,12 @@
   --footer--contact: rgba(255, 255, 255, 0.6);
   --icon--color: #afb1b8;
 }
+
+
+html{
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -595,6 +601,27 @@ height: 24px;
 fill: var(--header--color);
 }
 
+
+.scroll{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+ bottom: 50px;
+ background-color: var(--button--color);
+
+}
+
+.scroll_icon{
+ width: 30px;
+ height: 30px;
+ fill: var(--header--color);
+}
+
 /* portfolio */
 
 .card {
@@ -736,7 +763,16 @@ transform: translateY(100%);
 .is-hidden{
   opacity: 0;
   pointer-events: none;
+  transition-property:opacity ;
+  transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
+.is-hidden .modal{
+   transform: translate(-50%,500px) rotate(180deg) scale(-2) skew(20deg,20deg); 
+   /* transform: scale(0); */
+}
+
 
 
 .modal {
@@ -748,9 +784,14 @@ transform: translateY(100%);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+  transition-property: transform;
+  transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+
+
 
 .modal_close {
   display: flex;

@@ -60,10 +60,12 @@
       </div>
     </header>
     <main>
-      <section class="main">
+      <section class="main" id="scroll">
         <div class="container">
           <h1 class="main_head">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main_button" type="button" data-modal-open>Замовити послугу</button>
+          <button class="main_button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="unit">
@@ -377,14 +379,20 @@
         <div class="footer_wrap">
           <h2 class="footer_title">Підпишіться на розсилку</h2>
           <form class="footer_form">
-            <input type="email" placeholder="E-mail" class="footer_input">
-            <button type="submit" class="footer_btn">Підписатися <svg class="footer_send">
-              <use href="./img/symbol-defs.svg#icon-send"></use>
-            </svg></button>
+            <input type="email" placeholder="E-mail" class="footer_input" />
+            <button type="submit" class="footer_btn">
+              Підписатися
+              <svg class="footer_send">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <a href="#scroll" class="scroll"
+      ><svg class="scroll_icon">
+        <use href="./img/symbol-defs.svg#icon-arrow-up"></use></svg></a>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal_close">
@@ -393,34 +401,47 @@
           </svg>
         </button>
         <form class="modal_form">
-            <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
-            <label class="modal_lable">Ім'я
-              <input type="text" class="modal_input" required>
-              <svg class="modal_img">
-                <use href="./img/symbol-defs.svg#icon-person"></use>
-              </svg>
-            </label>
-            <label class="modal_lable">Телефон
-              <input type="tel" class="modal_input" placeholder="+3800123456789" pattern="^\+380\d{9}$" required>
-               <svg class="modal_img">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </label>
-            <label class="modal_lable">Пошта
-              <input type="email" class="modal_input" required>
-               <svg class="modal_img">
-                <use href="./img/symbol-defs.svg#icon-mailmodel"></use>
-              </svg>
-            </label>
-               <label class="modal_lable">Коментар
-              <textarea class="modal_coment" placeholder="Введіть текст"></textarea>
-            </label>
-            <div class="modal_wrap">
-              <input type="checkbox" class="modal_check" required>
-              <p class="modal_text">Погоджуюся з розсилкою та приймаю </p>
-              <a href="" class="modal_link">Умови договору</a>
-            </div>
-            <button type="submit" class="modal_supbutton">Відправити</button>
+          <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="modal_lable"
+            >Ім'я
+            <input type="text" class="modal_input" required />
+            <svg class="modal_img">
+              <use href="./img/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal_lable"
+            >Телефон
+            <input
+              type="tel"
+              class="modal_input"
+              placeholder="+3800123456789"
+              pattern="^\+380\d{9}$"
+              required
+            />
+            <svg class="modal_img">
+              <use href="./img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal_lable"
+            >Пошта
+            <input type="email" class="modal_input" required />
+            <svg class="modal_img">
+              <use href="./img/symbol-defs.svg#icon-mailmodel"></use>
+            </svg>
+          </label>
+          <label class="modal_lable"
+            >Коментар
+            <textarea
+              class="modal_coment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <div class="modal_wrap">
+            <input type="checkbox" class="modal_check" required />
+            <p class="modal_text">Погоджуюся з розсилкою та приймаю</p>
+            <a href="" class="modal_link">Умови договору</a>
+          </div>
+          <button type="submit" class="modal_supbutton">Відправити</button>
         </form>
       </div>
     </div>
