@@ -1,0 +1,54 @@
+@use"../base/var" as *;
+/* unit */
+.unit {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.unit_list {
+  display: flex;
+  gap: 30px;
+}
+
+.unit_item::before {
+  display: block;
+  content: "";
+  background-color: var(--ourteam--bg--color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-image: url(../img/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.unit_item:nth-child(2)::before {
+  background-image: url(../img/clock.png);
+}
+
+.unit_item:nth-child(3)::before {
+  background-image: url(../img/diagram.png);
+}
+
+.unit_item:nth-child(4)::before {
+  background-image: url(../img/astronaut.png);
+}
+
+.unit_title {
+  color: var(--title--color);
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.unit_txt {
+  color: var(--text--color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+}

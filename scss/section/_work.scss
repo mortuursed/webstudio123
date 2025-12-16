@@ -1,0 +1,41 @@
+@use"../base/var" as *;
+
+.work {
+  padding-bottom: 94px;
+}
+
+.work_item {
+  position: relative;
+}
+
+.work_title {
+  color: var(--title--color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.work_text {
+  color: var(--header--color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.work_list {
+  display: flex;
+  gap: 30px;
+}
