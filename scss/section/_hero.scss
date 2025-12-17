@@ -16,7 +16,7 @@
 }
 
 .main_head {
-  color: var(--header--color);
+  color: $header--color;
   text-align: center;
   width: 696px;
   font-size: 44px;
@@ -33,14 +33,14 @@
 }
 
 .main_button {
-  color: var(--header--color);
+  color: $header--color;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.96px;
   border-radius: 2px;
-  background: var(--button--color);
+  background: $button--color;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 32px;

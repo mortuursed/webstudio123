@@ -5,7 +5,7 @@
 }
 
 .footer_suptitle {
-  color: var(--header--color);
+  color: $header--color;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -35,18 +35,18 @@
 .footer_icon {
   width: 20px;
   height: 20px;
-  fill: var(--header--color);
+  fill: $header--color;
    transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_suplink:hover {
-  background-color: var(--button--color);
+  background-color: $button--color;
 }
 
 .footer {
-  background-color: var(--cap--bg--color);
+  background-color: $cap--bg--color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -59,7 +59,7 @@
 
 .footer_link {
   display: inline-block;
-  color: var(--button--color);
+  color: $button--color;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -69,11 +69,11 @@
 }
 
 .footer_studio {
-  color: var(--header--color);
+  color: $header--color;
 }
 
 .footer_address {
-  color: var(--header--color);
+  color: $header--color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -83,7 +83,7 @@
 }
 
 .footer_contact {
-  color: var(--footer--contact);
+  color: $footer--contact;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
@@ -101,7 +101,7 @@ font-weight: 700;
 font-size: 14px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--header--color);
+color: $header--color;
 margin-bottom: 20px;
 }
 
@@ -112,7 +112,6 @@ margin-bottom: 20px;
 }
 
 .footer_input{
-  font-family: var(--font-family);
 font-weight: 400;
 font-size: 16px;
 line-height: 125%;
@@ -133,13 +132,13 @@ background: rgba(33, 150, 243, 0);
 width: 200px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: var(--button--color);
+background: $button--color;
 font-weight: 700;
 font-size: 16px;
 line-height: 187%;
 letter-spacing: 0.06em;
 text-align: center;
-color: var(--header--color);
+color: $header--color;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -150,5 +149,5 @@ gap: 10px;
 .footer_send{
 width: 24px;
 height: 24px;
-fill: var(--header--color);
+fill: $header--color;
 }
