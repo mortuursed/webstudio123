@@ -38,7 +38,7 @@
             <li class="header__item">
               <a class="header__link" href="./pages/portfolio.html">Портфоліо</a>
             </li>
-            <li class="header_item">
+            <li class="header__item">
               <a class="header__link" href="./index.html">Контакти</a>
             </li>
           </ul>
@@ -66,7 +66,7 @@
     <main>
       <section class="main" id="scroll">
         <div class="container">
-          <h1 class="main_head">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="main__head">Ефективні рішення для вашого бізнесу</h1>
           <button class="main__button" type="button" data-modal-open>
             Замовити послугу
           </button>
@@ -152,9 +152,9 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team_elm">
-                    <a href="" class="team_link">
-                      <svg class="team_icon">
+                  <li class="team__elm">
+                    <a href="" class="team__link">
+                      <svg class="team__icon">
                         <use href="./img/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -309,7 +309,7 @@
               </svg>
             </li>
             <li class="client__item">
-              <svg class="client_icon">
+              <svg class="client__icon">
                 <use href="./img/symbol-defs.svg#icon-brand"></use>
               </svg>
             </li>
@@ -388,7 +388,7 @@
           <h2 class="footer__title">Підпишіться на розсилку</h2>
           <form class="footer__form">
             <input type="email" placeholder="E-mail" class="footer__input" />
-            <button type="submit" class="footer_btn">
+            <button type="submit" class="footer__btn">
               Підписатися
               <svg class="footer__send">
                 <use href="./img/symbol-defs.svg#icon-send"></use>
@@ -403,53 +403,53 @@
         <use href="./img/symbol-defs.svg#icon-arrow-up"></use></svg></a>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close class="modal_close">
-          <svg class="modal_icon">
+        <button type="button" data-modal-close class="modal__close">
+          <svg class="modal__icon">
             <use href="./img/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
-        <form class="modal_form">
-          <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
-          <label class="modal_lable"
+        <form class="modal__form">
+          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="modal__lable"
             >Ім'я
-            <input type="text" class="modal_input" required />
-            <svg class="modal_img">
+            <input type="text" class="modal__input" required />
+            <svg class="modal__img">
               <use href="./img/symbol-defs.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="modal_lable"
+          <label class="modal__lable"
             >Телефон
             <input
               type="tel"
-              class="modal_input"
+              class="modal__input"
               placeholder="+3800123456789"
               pattern="^\+380\d{9}$"
               required
             />
-            <svg class="modal_img">
+            <svg class="modal__img">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
           </label>
-          <label class="modal_lable"
+          <label class="modal__lable"
             >Пошта
-            <input type="email" class="modal_input" required />
+            <input type="email" class="modal__input" required />
             <svg class="modal_img">
               <use href="./img/symbol-defs.svg#icon-mailmodel"></use>
             </svg>
           </label>
-          <label class="modal_lable"
+          <label class="modal__lable"
             >Коментар
             <textarea
-              class="modal_coment"
+              class="modal__coment"
               placeholder="Введіть текст"
             ></textarea>
           </label>
-          <div class="modal_wrap">
-            <input type="checkbox" class="modal_check" required />
-            <p class="modal_text">Погоджуюся з розсилкою та приймаю</p>
-            <a href="" class="modal_link">Умови договору</a>
+          <div class="modal__wrap">
+            <input type="checkbox" class="modal__check" required />
+            <p class="modal__text">Погоджуюся з розсилкою та приймаю</p>
+            <a href="" class="modal__link">Умови договору</a>
           </div>
-          <button type="submit" class="modal_supbutton">Відправити</button>
+          <button type="submit" class="modal__supbutton">Відправити</button>
         </form>
       </div>
     </div>

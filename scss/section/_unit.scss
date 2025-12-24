@@ -3,14 +3,13 @@
 .unit {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.unit_list {
+&__list {
   display: flex;
   gap: 30px;
 }
-
-.unit_item::before {
+&__item{
+&::before {
   display: block;
   content: "";
   background-color: $ourteam--bg--color;
@@ -22,19 +21,21 @@
   background-position: center;
   margin-bottom: 30px;
 }
-.unit_item:nth-child(2)::before {
+&:nth-child(2)::before {
   background-image: url(../img/clock.png);
 }
 
-.unit_item:nth-child(3)::before {
+&:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
 
-.unit_item:nth-child(4)::before {
+&:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
 
-.unit_title {
+}
+
+  &__title {
   color: $title--color;
   display: block;
   font-size: 14px;
@@ -45,10 +46,17 @@
   margin-bottom: 10px;
 }
 
-.unit_txt {
+
+
+&__txt {
   color: $text--color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.42px;
 }
+}
+
+
+
+

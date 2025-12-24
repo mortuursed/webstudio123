@@ -2,15 +2,14 @@
 .client {
   padding-bottom: 94px;
   padding-top: 94px;
-}
-
-.client_list {
+  
+  &__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client_title {
+&__title {
   color: $title--color;
   text-align: center;
   font-size: 36px;
@@ -20,7 +19,7 @@
   margin-bottom: 50px;
 }
 
-.client_item {
+&__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,16 +30,16 @@
    transition-property: border;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client_item:hover {
+  &:hover {
   border: 1px solid $button--color;
-  .client_icon {
+  .client__icon {
     fill: $button--color;
   }
 }
+}
 
-.client_icon {
+&__icon {
   width: 106px;
   height: 60px;
   fill: $icon--color;
@@ -48,3 +47,6 @@
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
+
