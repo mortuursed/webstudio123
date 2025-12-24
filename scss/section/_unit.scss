@@ -13,7 +13,7 @@
 .unit_item::before {
   display: block;
   content: "";
-  background-color: var(--ourteam--bg--color);
+  background-color: $ourteam--bg--color;
   border-radius: 4px;
   width: 270px;
   height: 120px;
@@ -35,7 +35,7 @@
 }
 
 .unit_title {
-  color: var(--title--color);
+  color: $title--color;
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -46,7 +46,7 @@
 }
 
 .unit_txt {
-  color: var(--text--color);
+  color: $text--color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;

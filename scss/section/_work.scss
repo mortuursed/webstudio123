@@ -9,7 +9,7 @@
 }
 
 .work_title {
-  color: var(--title--color);
+  color:$title--color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -19,7 +19,7 @@
 }
 
 .work_text {
-  color: var(--header--color);
+  color:$header--color;
   position: absolute;
   bottom: 0;
   left: 0;

@@ -1,12 +1,12 @@
 @use"../base/var" as *;
 .team {
-  background-color: var(--ourteam--bg--color);
+  background-color: $ourteam--bg--color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team_our {
-  color: var(--title--color);
+  color: $title--color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -36,7 +36,7 @@
 .team_icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon--color);
+  fill: $icon--color;
    transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,9 +55,9 @@
 }
 
 .team_link:hover {
-  background-color: var(--button--color);
+  background-color: $button--color;
   .team_icon {
-    fill: var(--ourteam--bg--color);
+    fill: $ourteam--bg--color;
   }
 }
 
@@ -69,13 +69,13 @@
 
 .team_div {
   border-radius: 0 0 4px 4px;
-  background-color: var(--header--color);
+  background-color: $header--color;
   padding-bottom: 30px;
   padding-top: 30px;
 }
 
 .team_title {
-  color: var(--title--color);
+  color: $title--color;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -85,7 +85,7 @@
 }
 
 .team_txt {
-  color: var(--text--color);
+  color: $text--color;
   text-align: center;
   font-size: 16px;
   font-weight: 400;

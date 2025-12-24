@@ -9,12 +9,12 @@
   position: fixed;
   right: 50px;
  bottom: 50px;
- background-color: var(--button--color);
+ background-color: $button--color;
 
 }
 
 .scroll_icon{
  width: 30px;
  height: 30px;
- fill: var(--header--color);
+ fill: $header--color;
 }
