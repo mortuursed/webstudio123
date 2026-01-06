@@ -1,10 +1,10 @@
 @use"../base/var" as *;
+@use"../utils/placeholder";
 .card {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.card_div {
+  &__div {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-top: 20px;
@@ -12,13 +12,12 @@
 }
 
 
-.card_item{
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+&__item{
+  @extend %transition;
   transition-property: color,background-color;
-  transition-property: 250ms;
 }
 
-.card_btn {
+&__btn {
   color: $title--color;
   text-align: center;
   font-size: 16px;
@@ -29,16 +28,16 @@
   border: none;
   background: $ourteam--bg--color;
   padding: 6px 22px 6px 22px;
-}
-.card_btn:hover,
-.card_btn:focus {
+
+    &:hover,
+&:focus {
   color: $header--color;
   background-color: $button--color;
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
-
-.card_list {
+}
+&__list {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -46,31 +45,39 @@
   margin-bottom: 50px;
 }
 
-.card_items {
+&__items {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-
-.card_elm {
+&__elm {
   border: 1px solid #eee;
   width: 370px;
   height: 404px;
   flex-shrink: 0;
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   transition: all;
-  transition-property: 250ms;
+  @extend %transition;
+
+  &:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    .card__suptext{
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
 
-.card_wraper{
+}
+
+&__wraper{
   position: relative;
   overflow: hidden;
 }
 
 
-.card_suptext{
+&__suptext{
 font-weight: 400;
 font-size: 18px;
 line-height: 156%;
@@ -84,23 +91,11 @@ padding: 63px 24px;
 height: 100%;
 opacity: 0;
 transform: translateY(100%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   transition-property: transform,opacity ;
-  transition-duration: 250ms ;
+    @extend %transition;
 }
 
-
-
-.card_elm:hover {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    1px 4px 6px 0 rgba(0, 0, 0, 0.16);
-    .card_suptext{
-      opacity: 1;
-      transform: translateY(0);
-    }
-}
-
-.card_title {
+&__title {
   color: $title--color;
   font-family: Roboto;
   font-size: 18px;
@@ -110,7 +105,7 @@ transform: translateY(100%);
   margin-bottom: 4px;
 }
 
-.card_txt {
+&__txt {
   color: $text--color;
   font-family: Roboto;
   font-size: 16px;
@@ -118,3 +113,14 @@ transform: translateY(100%);
   line-height: 1.87;
   letter-spacing: 0.48px;
 }
+}
+
+
+
+
+
+
+
+
+
+

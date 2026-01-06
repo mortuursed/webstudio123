@@ -1,4 +1,5 @@
 @use"../base/var" as *;
+@use"../utils/placeholder";
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -38,8 +39,7 @@
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
   &:hover,
 &:focus {
   color: $button--color;
@@ -67,9 +67,9 @@ position: absolute;
 left: 0;
 bottom: -33px;
 opacity: 0;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@extend %transition;
 transition-property:opacity;
-transition-duration: 250ms;
+
 }
 
 
@@ -105,8 +105,7 @@ transition-duration: 250ms;
   height: 12px;
   fill: $text--color;
    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 
@@ -117,8 +116,7 @@ transition-duration: 250ms;
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+@extend %transition;
   &:hover,
 &:focus {
   color: $button--color;

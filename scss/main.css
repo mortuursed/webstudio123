@@ -36,6 +36,11 @@ body {
   outline: solid red;
 }
 
+.card__item, .card__elm, .card__suptext, .is-hidden, .modal, .footer__suplink, .footer__icon, .client__item, .client__icon, .team__icon, .team__link, .header__link, .header__link::after, .header__icon, .header__suplink {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -71,8 +76,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover, .header__link:focus {
   color: #2196f3;
@@ -94,9 +97,7 @@ body {
   left: 0;
   bottom: -33px;
   opacity: 0;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity;
-  transition-duration: 250ms;
 }
 .header .active {
   color: #2196f3;
@@ -121,8 +122,6 @@ body {
   height: 12px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__suplink {
   color: #757575;
@@ -131,8 +130,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__suplink:hover, .header__suplink:focus {
   color: #2196f3;
@@ -304,8 +301,6 @@ body {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link {
   display: flex;
@@ -315,8 +310,6 @@ body {
   width: 44px;
   border-radius: 50%;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link:hover {
   background-color: #2196f3;
@@ -379,8 +372,6 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__item:hover {
   border: 1px solid #2196f3;
@@ -393,8 +384,6 @@ body {
   height: 60px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -424,8 +413,6 @@ body {
   justify-content: center;
   align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__suplink:hover {
   background-color: #2196f3;
@@ -435,8 +422,6 @@ body {
   height: 20px;
   fill: #ffffff;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__list {
   display: flex;
@@ -566,8 +551,6 @@ body {
   opacity: 0;
   pointer-events: none;
   transition-property: opacity;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden .modal {
@@ -586,8 +569,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   transition-property: transform;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_close {
@@ -740,21 +721,16 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.card_div {
+.card__div {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-top: 20px;
   padding-right: 24px;
 }
-
-.card_item {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.card__item {
   transition-property: color, background-color;
-  transition-property: 250ms;
 }
-
-.card_btn {
+.card__btn {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -766,46 +742,44 @@ body {
   background: #f5f4fa;
   padding: 6px 22px 6px 22px;
 }
-
-.card_btn:hover,
-.card_btn:focus {
+.card__btn:hover, .card__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
-
-.card_list {
+.card__list {
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
-
-.card_items {
+.card__items {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-
-.card_elm {
+.card__elm {
   border: 1px solid #eee;
   width: 370px;
   height: 404px;
   flex-shrink: 0;
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: all;
-  transition-property: 250ms;
 }
-
-.card_wraper {
+.card__elm:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.card__elm:hover .card__suptext {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card__wraper {
   position: relative;
   overflow: hidden;
 }
-
-.card_suptext {
+.card__suptext {
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -819,20 +793,9 @@ body {
   height: 100%;
   opacity: 0;
   transform: translateY(100%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, opacity;
-  transition-duration: 250ms;
 }
-
-.card_elm:hover {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
-}
-.card_elm:hover .card_suptext {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card_title {
+.card__title {
   color: #212121;
   font-family: Roboto;
   font-size: 18px;
@@ -841,8 +804,7 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-
-.card_txt {
+.card__txt {
   color: #757575;
   font-family: Roboto;
   font-size: 16px;

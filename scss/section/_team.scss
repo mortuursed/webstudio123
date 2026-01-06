@@ -1,4 +1,5 @@
 @use"../base/var" as *;
+@use"../utils/placeholder";
 .team {
   background-color: $ourteam--bg--color;
   padding-top: 94px;
@@ -37,8 +38,7 @@
   height: 20px;
   fill: $icon--color;
    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 
@@ -50,8 +50,7 @@
   width: 44px;
   border-radius: 50%;
    transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
   
 &:hover {
   background-color: $button--color;
