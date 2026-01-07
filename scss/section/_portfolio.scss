@@ -1,5 +1,6 @@
 @use"../base/var" as *;
 @use"../utils/placeholder";
+@use"../utils/mixin" as *;
 .card {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -38,17 +39,19 @@
 }
 }
 &__list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // gap: 8px;
+  // justify-content: center;
+  // align-items: center;
+  @include flexbox($gap:8px);
   margin-bottom: 50px;
 }
 
 &__items {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  // display: flex;
+  // gap: 30px;
+  // flex-wrap: wrap;
+  @include flexbox($gap:30px);
 }
 &__elm {
   border: 1px solid #eee;

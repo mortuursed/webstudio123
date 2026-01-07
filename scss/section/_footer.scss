@@ -1,5 +1,6 @@
 @use"../base/var" as *;
 @use"../utils/placeholder";
+@use"../utils/mixin" as *;
 
 .footer{
     background-color: $cap--bg--color;
@@ -21,13 +22,14 @@
 }
 
 &__suplink {
-  display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flexbox();
    transition-property:  background-color;
   @extend %transition;
     &:hover {
@@ -43,9 +45,10 @@
     @extend %transition;
 }
 &__list {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 9px;
+  @include flexbox ($direction:column, $gap:9px, $align:flex-start);
 }
 
 &__link {
@@ -121,10 +124,11 @@ line-height: 187%;
 letter-spacing: 0.06em;
 text-align: center;
 color: $header--color;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// gap: 10px;
+@include flexbox($gap:10px);
 }
 
 

@@ -1,5 +1,6 @@
 @use"../base/var" as *;
 @use"../utils/placeholder";
+@use"../utils/mixin" as *;
 .team {
   background-color: $ourteam--bg--color;
   padding-top: 94px;
@@ -26,10 +27,11 @@
 }
 
 &__items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // gap: 10px;
+  @include flexbox($gap:10px);
   margin-top: 16px;
 }
 
@@ -43,9 +45,10 @@
 
 
 &__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flexbox ();
   height: 44px;
   width: 44px;
   border-radius: 50%;

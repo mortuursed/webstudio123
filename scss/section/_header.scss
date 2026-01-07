@@ -1,5 +1,6 @@
 @use"../base/var" as *;
 @use"../utils/placeholder";
+@use"../utils/mixin" as *;
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -86,10 +87,11 @@ transition-property:opacity;
 }
 
 &__supitem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-direction: row-reverse;
+  // display: flex;
+  // align-items: center;
+  // gap: 10px;
+  // flex-direction: row-reverse;
+  @include flexbox($gap:10px, $direction:row-reverse);
 
   &:last-child {
   .header__icon {

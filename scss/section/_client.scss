@@ -1,13 +1,15 @@
 @use"../base/var" as *;
 @use"../utils/placeholder";
+@use"../utils/mixin" as *;
 .client {
   padding-bottom: 94px;
   padding-top: 94px;
   
   &__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  // display: flex;
+  // justify-content: center;
+  // gap: 30px;
+  @include flexbox ($gap:30px);
 }
 
 &__title {
@@ -21,9 +23,10 @@
 }
 
 &__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flexbox();
   width: 170px;
   height: 92px;
   border-radius: 4px;
