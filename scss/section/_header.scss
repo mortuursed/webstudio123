@@ -2,8 +2,16 @@
 @use"../utils/placeholder";
 @use"../utils/mixin" as *;
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+ @media screen and (min-width:768px){
+    padding: 21px 0px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 24px 0px;
+  }
 
    & > .container {
   display: flex;
@@ -13,11 +21,22 @@
   &__logo {
   color: $button--color;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.38;
+  line-height: 0.03em;
   letter-spacing: 0.78px;
-  margin-right: 93px;
+  margin-right: auto;
+  
+        @media screen and (min-width:768px){
+    margin-right: 87px ;
+  }
+
+  @media screen and (min-width:1200px) {
+   font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
+
 }
 
 &__studio {
@@ -29,8 +48,19 @@
 
 
 &__list {
-  display: flex;
-  gap: 50px;
+  display: none;
+  margin-left: auto;
+
+  @media screen and (min-width:768px)  {
+      display: flex;
+      flex-direction: column;
+      gap:10px
+    }
+
+    @media screen and (min-width:1200px) {
+     flex-direction: row; 
+     gap:30px;
+    }
 }
 
 &__link {
