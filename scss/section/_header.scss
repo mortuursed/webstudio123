@@ -108,6 +108,7 @@ transition-property:opacity;
 
   @media screen and (min-width:768px) {
     display: block;
+    
   }
 }
 
@@ -115,7 +116,7 @@ transition-property:opacity;
 &__scroll {
   display: flex;
   gap: 50px;
-  margin-left: auto;
+  margin-left:auto ;
 }
 
 &__supitem {

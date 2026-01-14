@@ -1,7 +1,15 @@
 @use"../base/var" as *;
 
 .work {
+  display: none;
   padding-bottom: 94px;
+  padding-top: 94px;
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
+
 
   &__title {
   color:$title--color;

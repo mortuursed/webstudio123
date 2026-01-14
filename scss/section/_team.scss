@@ -3,27 +3,42 @@
 @use"../utils/mixin" as *;
 .team {
   background-color: $ourteam--bg--color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+  padding: 94px 0px;
+}
 
   &__our {
   color: $title--color;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
+
+   @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
 }
 
 &__img {
-  width: 270px;
-  height: 270px;
+width: 100%;
 }
 
 &__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 }
 
 &__items {
@@ -33,6 +48,20 @@
   // gap: 10px;
   @include flexbox($gap:10px);
   margin-top: 16px;
+
+    @media screen and (min-width: 480px) {
+        flex-basis: 450px;
+      }
+
+      
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+
+      
+      @media screen and (min-width: 1200px) {
+         flex-basis: calc((100% - 90px) / 4);
+      }
 }
 
 &__icon {
