@@ -26,8 +26,8 @@
   line-height: 0.03em;
   letter-spacing: 0.78px;
   margin-right: auto;
-  
-        @media screen and (min-width:768px){
+
+    @media screen and (min-width:768px){
     margin-right: 87px ;
   }
 
@@ -48,7 +48,7 @@
 
 
 &__list {
-  display: none;
+  display: flex;
   margin-left: auto;
 
   @media screen and (min-width:768px)  {
@@ -103,12 +103,14 @@ transition-property:opacity;
 
 }
 
+&__nav{
+  display: none;
 
-
-
-.active {
-  color: $button--color;
+  @media screen and (min-width:768px) {
+    display: block;
+  }
 }
+
 
 &__scroll {
   display: flex;
@@ -158,7 +160,11 @@ transition-property:opacity;
 }
 }
 }
+ 
 
+.active {
+  color: $button--color;
+}
 
 
 
