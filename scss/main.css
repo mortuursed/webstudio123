@@ -503,6 +503,21 @@ body {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 480px) {
+  .team__item {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .team__div {
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
@@ -584,6 +599,23 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+.footer__box {
+  width: 235px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    text-align: start;
+  }
+}
 .footer__suptitle {
   color: #ffffff;
   font-size: 14px;
@@ -631,11 +663,17 @@ body {
   display: inline-block;
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .footer__studio {
   color: #ffffff;
@@ -657,8 +695,23 @@ body {
   letter-spacing: 0.42px;
 }
 .footer__join {
-  margin-left: 70px;
-  margin-right: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__join {
+    margin-left: 165px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    margin-left: 70px;
+    text-align: start;
+  }
 }
 .footer__title {
   font-weight: 700;
@@ -704,6 +757,21 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   flex-direction: row;
+}
+.footer__wrap {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    text-align: start;
+    margin-top: 0px;
+    margin-left: 93px;
+  }
 }
 .footer__send {
   width: 24px;
