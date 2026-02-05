@@ -638,9 +638,15 @@ body {
 }
 .footer__wraper {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
   justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__wraper {
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__wraper {
@@ -650,10 +656,18 @@ body {
 .footer__box {
   width: 235px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
     text-align: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .footer__suptitle {
@@ -749,12 +763,16 @@ body {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .footer__join {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    margin-left: 165px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -918,28 +936,49 @@ body {
 .card__list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
   flex-direction: row;
   margin-bottom: 50px;
+  row-gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .card__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: row;
+  }
 }
 .card__items {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 .card__elm {
   border: 1px solid #eee;
-  width: 370px;
-  height: 404px;
-  flex-shrink: 0;
-  flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid #eee;
+  flex-basis: 100%;
+  outline: 1px solid #eee;
   transition: all;
+}
+@media screen and (min-width: 480px) {
+  .card__elm {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__elm {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__elm {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .card__elm:hover {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
@@ -1017,7 +1056,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 90%;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1027,6 +1066,16 @@ body {
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   transition-property: transform;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__close {

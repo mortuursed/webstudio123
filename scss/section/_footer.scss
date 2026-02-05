@@ -9,9 +9,15 @@
 
   &__wraper{
       display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
       justify-content: center;
+      flex-direction: column;
+
+      @media screen and (min-width:768px) {
+        flex-direction: row;
+        align-items: baseline;
+         flex-wrap: wrap;  
+      }
+
       @media screen and (min-width:1200px) {
         flex-wrap: nowrap;
       }
@@ -20,12 +26,16 @@
    &__box{
     width:235px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width:1200px) {
   text-align: start;
   }
 
   @media screen and (min-width:768px) {
+    margin-left: 0;
+    margin-right: 0;
 }
     }
 
@@ -120,16 +130,18 @@
   text-align: center;
 margin-top: 60px ;
 margin-bottom: 60px ;
+margin-left: auto;
+margin-right: auto;
 
 @media screen and (min-width:480px) {
- 
 }
 
   @media screen and (min-width:768px) {
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-
+    margin-left: 165px;
+    margin-right: 0;
   }
 
   @media screen and (min-width:1200px) {

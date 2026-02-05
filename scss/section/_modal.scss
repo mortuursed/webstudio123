@@ -31,7 +31,7 @@
 
 
 .modal {
-  width: 528px;
+  width: 90%;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -43,6 +43,15 @@
   padding: 40px;
   transition-property: transform;
   @extend %transition;
+
+
+  @media screen and (min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width:768px) {
+      width: 528px;
+  }
 }
 
 
