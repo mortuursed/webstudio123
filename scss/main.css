@@ -105,6 +105,43 @@ body {
           background-clip: text;
   color: transparent;
 }
+.header__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__menu {
+  width: 20px;
+  height: 20px;
+  fill: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
+}
+@keyframes logo-scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.header__color {
+  color: #2196f3;
+}
 .header__list {
   display: none;
   margin-left: auto;
