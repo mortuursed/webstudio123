@@ -27,6 +27,29 @@
           href="./index.html"
           >Web<span class="header__studio">Studio</span></a
         >
+        <button data-menu-open type="button" class="header__btn"><svg class="header__menu">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg></button>
+        <div data-menu class="menu is-hidden">
+          <button data-menu-close type="button" class="menu__close"><svg class="menu__icon">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg></button>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link curent">Студія</a></li>
+            <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+          </ul>
+          <ul class="menu__items">
+            <li class="menu__el"><a href="tel:380961111111" class="menu__contact">+38 096 111 11 11</a></li>
+            <li class="menu__el"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__social">
+            <li class="menu__elm"><a href="#" class="menu__web">Instagram</a></li>
+            <li class="menu__elm"><a href="#" class="menu__web">Twitter</a></li>
+            <li class="menu__elm"><a href="#" class="menu__web">Facebook</a></li>
+            <li class="menu__elm"><a href="#" class="menu__web">LinkedIn</a></li>
+          </ul>
+        </div>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -479,6 +502,7 @@
         </form>
       </div>
     </div>
+    <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
